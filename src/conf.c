@@ -5,9 +5,9 @@ static inline void
 _cfg_print(mp_conf_t *cfg)
 {
 #if defined(MP_DEBUG)
-	sprint(cfg->vl_repr, "%hhd", cfg->value);
-	sprint(cfg->id_repr, "%hhd", cfg->id);
-	printf("DEBUG: ID: %s\tVALUE: %s\n", cfg->id_reprm cfg->vl_repr);
+	sprintf(cfg->vl_repr, "%2hhd", cfg->value);
+	sprintf(cfg->id_repr, "%2hhd", cfg->id);
+	printf("DEBUG: ID: %s\tVALUE: %s\n", cfg->id_repr, cfg->vl_repr);
 #else
 	printf("Non-debug build!\n");
 #endif /* MP_DEBUG */
