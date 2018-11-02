@@ -1,2 +1,2 @@
 # mainproject
-NMain project epta
+Main project epta
